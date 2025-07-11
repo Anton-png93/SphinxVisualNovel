@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayButtonScript : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayButtonScript : MonoBehaviour
     public GameObject richFrame;          // Рамка
     public GameObject continueButton;     // Кнопка Продолжить
     public GameObject goldBackground;
+    public TypingEffect typingEffect; // Эффект печати текста
 
     public void StartGame()
     {
@@ -22,5 +24,6 @@ public class PlayButtonScript : MonoBehaviour
         richFrame.SetActive(true);
         goldBackground.SetActive(true);
         continueButton.SetActive(true);
+        typingEffect.StartTyping("Ты осмелился войти в гробницу древнего царя...");
     }
 }
