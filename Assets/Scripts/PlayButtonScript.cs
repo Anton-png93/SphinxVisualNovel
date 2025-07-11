@@ -9,6 +9,7 @@ public class PlayButtonScript : MonoBehaviour
     public GameObject dialoguePanel;      // Панель с текстом
     public GameObject richFrame;          // Рамка
     public GameObject continueButton;     // Кнопка Продолжить
+    public GameObject goldBackground;
 
     public void StartGame()
     {
@@ -19,6 +20,7 @@ public class PlayButtonScript : MonoBehaviour
         camelBackground.SetActive(true);
         dialoguePanel.SetActive(true);
         richFrame.SetActive(true);
+        goldBackground.SetActive(true);
         continueButton.SetActive(true);
     }
 }
