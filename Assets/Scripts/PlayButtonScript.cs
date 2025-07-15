@@ -23,7 +23,7 @@ public class PlayButtonScript : MonoBehaviour
         dialoguePanel.SetActive(true);
         richFrame.SetActive(true);
         goldBackground.SetActive(true);
-        continueButton.SetActive(true);
+        continueButton.SetActive(false); // <- сначала скрываем
         typingEffect.StartTyping(
         "Ты шёл по раскалённой пустыне, провизия закончилась, а во фляге плескались последние капли воды...\n\n" +
         "Ноги подкашивались, надежда угасала. Но вдруг — вдали среди песчаных бурь показался пик древней пирамиды.\n\n" +

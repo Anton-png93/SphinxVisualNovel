@@ -43,6 +43,8 @@ public class TypingEffect : MonoBehaviour
 
     public void NextSentence()
     {
+        Debug.Log("Кнопка нажата — метод NextSentence вызван");
+        
         continueButton.SetActive(false);
         sentenceIndex++;
 
