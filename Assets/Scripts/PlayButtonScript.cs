@@ -12,6 +12,7 @@ public class PlayButtonScript : MonoBehaviour
     public GameObject continueButton;     // Кнопка Продолжить
     public GameObject goldBackground;
     public TypingEffect typingEffect; // Эффект печати текста
+    public HeroController heroController;
 
     public void StartGame()
     {
@@ -31,5 +32,6 @@ public class PlayButtonScript : MonoBehaviour
         "обитает жуткий СФИНКС — хранитель сокровищницы древнего мира.\n\n" +
         "Он не знает жалости, не знает сна… Но, если сможешь одолеть его хитростью — все богатства станут твоими."
         );
+         heroController.PlayEntrance(); // ← запускаем анимацию
     }
 }
